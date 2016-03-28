@@ -1,9 +1,11 @@
 <div class="header clearfix">
   <nav>
     <ul class="nav nav-pills pull-right">
-      <li role="presentation" class="active"><a href="#">Home</a></li>
-      <li role="presentation"><a href="#">About</a></li>
-      <li role="presentation"><a href="#">Contact</a></li>
+      {% for page in site.pages %}
+        {% if page.layout == "page" %}
+          <li role="presentation" class="active"><a href="{{ page.url }}">{{ page.title }}</a></li>
+        {% endif %}
+      {% endfor %}
     </ul>
   </nav>
   
