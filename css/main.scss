@@ -45,5 +45,6 @@ $on-laptop:        800px;
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
   "ie10-viewport-bug-workaround",
+  "ericmeyer",
   "styles"
 ;

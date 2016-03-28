@@ -7,3 +7,12 @@ body {
   color: $text-color;
   background: $background-color;
 }
+
+.sidebar {
+  float: left;
+  width: 200px;
+}
+
+.main-content {
+  margin-left: 200px;
+}
