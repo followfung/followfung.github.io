@@ -1,13 +1,14 @@
+{% assign current_url = page.url %}
 <div class="header clearfix">
   <nav>
     <ul class="nav nav-pills pull-right">
-      {% for page in site.pages %}
-        {% if page.layout == "page" %}
-          <li role="presentation" class="active"><a href="{{ page.url }}">{{ page.title }}</a></li>
+      {% for p in site.pages %}
+        {% if p.layout == "page" %}
+          <li role="presentation"{% if current_url == p.url %}class="active"{% endif %}><a href="{{ p.url }}">{{ p.title }}</a></li>
         {% endif %}
       {% endfor %}
     </ul>
   </nav>
   
-  <h3 class="text-muted">{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</h3>
+  <h3 class="text-muted"><a href="/">{{ site.title | escape }}</a></h3>
 </div>
