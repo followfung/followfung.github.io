@@ -4,16 +4,12 @@
   {% include head.html %}
 
   <body>
-  
-    <div class="container">
-      
-      {% include header.html %}
+    
+    {% include header.html %}
 
-      {{ content }}
+    {{ content }}
 
-      {% include footer.html %}
-
-    </div>
+    {% include footer.html %}
 
     <link rel="stylesheet" href="{{ "/js/ie10-viewport-bug-workaround.js" | prepend: site.baseurl }}">
 
