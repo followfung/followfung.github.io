@@ -63,13 +63,25 @@ p.copyright {
 
 /* Small screens */
 @include media-query(425px) {
+  .branding {
+    font-size: 1.7em;
+    margin-bottom: ($spacing / 2);
+  }
+
+  .copyright { display: none; }
+
   .sidebar { 
     float: none; 
     width: 90%;
   }
 
   .main-content {
-    margin: $spacing 0 0 0;
+    margin: ($spacing / 2) 0 0 0;
     padding-bottom: $spacing;
+  }
+  .main-content {
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: ($spacing / 2);
+    }
   }
 }
