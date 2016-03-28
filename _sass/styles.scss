@@ -47,8 +47,7 @@ $sidebar-width: 125px;
 }
 
 .main-content {
-  margin-left: $sidebar-width;
-  margin-top: $spacing * 2;
+  margin: ($spacing * 2) 0 0 $sidebar-width;
   padding: 0 $spacing;
 }
 
@@ -60,4 +59,17 @@ $sidebar-width: 125px;
 /* Copyright */
 p.copyright {
   margin: $spacing 0;
+}
+
+/* Small screens */
+@include media-query(425px) {
+  .sidebar { 
+    float: none; 
+    width: 90%;
+  }
+
+  .main-content {
+    margin: $spacing 0 0 0;
+    padding-bottom: $spacing;
+  }
 }
