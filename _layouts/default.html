@@ -6,13 +6,11 @@
   <body>
 
     <div class="sidebar">
-      {% include header.html %}
+      {% include sidebar.html %}
     </div>
 
     <div class="main-content">
       {{ content }}
-
-      {% include footer.html %}
     </div>
 
     <link rel="stylesheet" href="{{ "/js/ie10-viewport-bug-workaround.js" | prepend: site.baseurl }}">
