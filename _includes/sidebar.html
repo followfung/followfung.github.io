@@ -1,10 +1,10 @@
 {% assign current_url = page.url %}
 {% assign sorted_pages = site.pages | sort : "weight" %}
-<h1 class="branding">
+<h1 class="branding" role="banner">
   <a href="/">make stuff do stuff</a>
 </h1>
 
-<nav class="main-nav">
+<nav class="main-nav" role="navigation">
   <ul>
     {% for p in sorted_pages %}
       {% if p.layout == "page" %}
