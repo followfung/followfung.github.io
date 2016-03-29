@@ -54,6 +54,7 @@ $sidebar-width: 125px;
 
 /* Branding */
 .branding {
+  margin-top: ($spacing / 2);
   margin-bottom: ($spacing * 1.1);
 }
 
@@ -91,9 +92,6 @@ p.copyright {
 }
 
 @include media-query(675px) {
-  .branding {
-    margin-top: ($spacing / 2);
-  }
   .main-content {
     margin-top: $spacing;
     padding-bottom: $spacing;
