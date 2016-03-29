@@ -85,6 +85,9 @@ p.copyright {
 }
 
 @include media-query(675px) {
+  .branding {
+    margin-top: ($spacing / 2);
+  }
   .main-content {
     margin-top: $spacing;
     padding-bottom: $spacing;
