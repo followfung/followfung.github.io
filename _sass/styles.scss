@@ -61,7 +61,7 @@ p.copyright {
   margin: $spacing 0;
 }
 
-/* Small screens */
+/* Small screens (Mobile) */
 @include media-query(425px) {
   .branding {
     font-size: 1.7em;
@@ -76,12 +76,17 @@ p.copyright {
   }
 
   .main-content {
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: ($spacing / 2);
+    };
     margin: ($spacing / 2) 0 0 0;
     padding-bottom: $spacing;
   }
+}
+
+@include media-query(675px) {
   .main-content {
-    h1, h2, h3, h4, h5, h6 {
-      margin-top: ($spacing / 2);
-    }
+    margin-top: $spacing;
+    padding-bottom: $spacing;
   }
 }
